@@ -10,7 +10,7 @@ export default class Clock extends Component {
 
   //Call after first component is mounted in Dom
   componentDidMount() {
-    this.digiTimerID = setInterval(() => this.tick(), 1000);
+    this.digiTimerID = setInterval(() => this.updateTime(), 1000);
   }
 
   //call just before remove the clock components
@@ -18,7 +18,7 @@ export default class Clock extends Component {
     clearInterval(this.digiTimerID);
   }
 
-  tick() {
+  updateTime() {
     this.setState({
       date: new Date(),
     });
