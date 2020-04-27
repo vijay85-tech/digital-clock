@@ -27,7 +27,7 @@ export default class Clock extends Component {
   render() {
     return (
       <Fragment>
-        <p className="App-header">Welcome, Guest!</p>
+        {/* <p className="App-header">Welcome, Guest!</p> */}
         <small>The Time is </small>
         <h1>
           <FormettedTime cutterntTime={this.state.date} />

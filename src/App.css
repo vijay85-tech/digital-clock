@@ -1,6 +1,12 @@
 .App {
   text-align: center;
+  background-color: #235273;
+  min-height:100px;
+  width: 400px;
+  margin: 70px auto;
+  padding: 20px;
 }
+
 .App-header {
   align-items: center;
   justify-content: center;
